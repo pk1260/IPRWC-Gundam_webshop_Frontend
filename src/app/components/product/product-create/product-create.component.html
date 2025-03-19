@@ -1,0 +1,83 @@
+<section class="main-container">
+  <section class="create-container">
+    <h1>Create Product</h1>
+    <form class="create-form" (ngSubmit)="createProduct()">
+      <div class="form-group">
+        <label for="name">Title</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Title"
+          [(ngModel)]="name"
+          autocomplete="name"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        <input
+          type="text"
+          id="description"
+          name="description"
+          required
+          [(ngModel)]="description"
+          autocomplete="off"
+          placeholder="Description"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input
+          type="number"
+          id="price"
+          name="price"
+          required
+          [(ngModel)]="price"
+          autocomplete="off"
+          placeholder="Price"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="stock">Stock</label>
+        <input
+          type="number"
+          id="stock"
+          name="stock"
+          required
+          [(ngModel)]="stock"
+          autocomplete="off"
+          placeholder="Stock"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        <input
+          type="text"
+          id="image"
+          name="image"
+          required
+          [(ngModel)]="image"
+          autocomplete="off"
+          placeholder="Image URL"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="grade">Grade</label>
+        <select id="grade" name="grade" [(ngModel)]="grade" required>
+          <option value="MASTER_GRADE">Master Grade</option>
+          <option value="HIGH_GRADE">High Grade</option>
+          <option value="REAL_GRADE">Real Grade</option>
+          <option value="PERFECT_GRADE">Perfect Grade</option>
+        </select>
+      </div>
+
+      <button type="submit" class="submit-button">Create</button>
+    </form>
+  </section>
+</section>

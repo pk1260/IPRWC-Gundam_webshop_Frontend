@@ -1,0 +1,148 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.cart-container {
+  padding: 20px;
+  min-width: 300px;
+  max-width: 800px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.cart-header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #343a40;
+}
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.cart-item img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: fill;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.cart-item-details {
+  text-align: center;
+}
+
+.cart-item-details h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #495057;
+}
+
+.cart-item-details p {
+  margin: 5px 0;
+  color: #6c757d;
+}
+
+.cart-item-quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #495057;
+}
+
+.cart-item-quantity button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item-quantity button:hover {
+  background-color: #0056b3;
+}
+
+.remove-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+  background-color: #c82333;
+}
+
+.cart-total {
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #343a40;
+}
+
+.cart-empty {
+  text-align: center;
+  color: #888;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.order-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.order-button:hover {
+  background-color: #218838;
+}
+
+@media (min-width: 600px) {
+  .cart-item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .cart-item img {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .cart-item-details {
+    text-align: left;
+  }
+}
+
+.cart-container {
+  margin-top: 8rem;
+}

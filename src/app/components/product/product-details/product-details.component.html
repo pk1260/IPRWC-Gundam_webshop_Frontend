@@ -1,0 +1,21 @@
+<section class="main" *ngIf="product">
+  <section class="product-container">
+    <section class="left-side">
+      <figure>
+        <img [src]="product.image" alt="Product Image">
+      </figure>
+      <section class="product-description">
+        <h1>{{product.name}}</h1>
+        <p>{{product.description}}</p>
+      </section>
+    </section>
+    <section class="right-side">
+      <h2>Grade Type:</h2>
+      <p>{{product.grade}}</p>
+      <section class="price">
+        €{{product.price}} ,-
+      </section>
+      <button class="add-to-card" (click)="addToCart()">Add To Cart</button>
+    </section>
+  </section>
+</section>

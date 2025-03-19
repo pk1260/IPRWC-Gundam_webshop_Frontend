@@ -1,0 +1,23 @@
+<header>
+  <nav class="nav_inner_container">
+    <a href="/">
+      <figure>
+        <img src="./assets/gundam_logo.webp" alt="Logo">
+      </figure>
+    </a>
+
+    <label class="icons" (click)="toggleMenuVisibility()">
+      <i class="bx bx-menu" id="menu-icon" [ngClass]="{'hidden': !isMenuVisible}"></i>
+      <i class="bx bx-x" id="close-icon" [ngClass]="{'hidden': isMenuVisible}"></i>
+    </label>
+
+    <ul class="nav_links-list" [ngClass]="{'toggle': !isMenuVisible}">
+      <li><a href="/">Shop</a></li>
+      <li><a href="/cart">Cart</a></li>
+      <li *ngIf="isAdmin"><a href="/create">Create</a></li>
+      <li *ngIf="!isAuthenticated"><a href="/login">Login</a></li>
+      <li *ngIf="isAuthenticated"><a href="/account">account</a></li>
+      <li *ngIf="isAuthenticated"><a href="#" (click)="signoutClick()">Logout</a></li>
+    </ul>
+  </nav>
+</header>

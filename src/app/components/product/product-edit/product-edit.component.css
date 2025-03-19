@@ -1,0 +1,120 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  width: 100%;
+}
+
+.edit-container {
+  width: 40%;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-form input,
+.edit-form select,
+.edit-form button[type="submit"] {
+  padding: 0.75rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  font-size: 16px;
+}
+
+.edit-form button[type="submit"] {
+  margin-bottom: 0;
+}
+
+.edit-form input,
+.edit-form select {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #495057;
+}
+
+.edit-form input::placeholder,
+.edit-form select::placeholder {
+  color: #6c757d;
+  opacity: 0.8;
+}
+
+.edit-form input:focus,
+.edit-form select:focus {
+  outline: none;
+  border: 2px solid #00a2ff;
+}
+
+.edit-form label {
+  color: #495057;
+  margin-left: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.edit-form button[type="submit"] {
+  background-color: #5B9E48;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-form button[type="submit"]:hover {
+  background-color: #4a7e3a;
+}
+
+.edit-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-buttons button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-buttons button:hover {
+  background-color: #c82333;
+}
+
+h1 {
+  color: #343a40;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.red-button {
+  background-color: red;
+  font-size: 16px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.red-button:hover {
+  background-color: darkred;
+}
+
+@media only screen and (max-width: 720px) {
+  .edit-container {
+    width: 80%;
+  }
+}

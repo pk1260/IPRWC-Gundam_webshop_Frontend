@@ -1,0 +1,23 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.account-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.account-details {
+  margin-top: 20px;
+}
+
+.account-details p {
+  font-size: 16px;
+  margin: 5px 0;
+}

@@ -1,0 +1,30 @@
+<section class="main-container">
+  <section class="login-container">
+    <h1>Register now!</h1>
+    <form class="login-form" (ngSubmit)="submitRegister()">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="username"
+        [(ngModel)]="username"
+        autocomplete="name"
+        required
+      />
+
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+        [(ngModel)]="password"
+        autocomplete="off"
+        placeholder="password"
+      />
+
+      <button type="submit">Register</button>
+    </form>
+  </section>
+</section>

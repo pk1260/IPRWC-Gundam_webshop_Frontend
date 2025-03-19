@@ -1,0 +1,64 @@
+<section class="main-container">
+  <section class="edit-container">
+    <form class="edit-form" (ngSubmit)="editProduct()">
+      <label for="name">Title</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Title"
+        [(ngModel)]="name"
+        autocomplete="name"
+        required
+      />
+
+      <label for="description">Description</label>
+      <input
+        type="text"
+        id="description"
+        name="description"
+        required
+        [(ngModel)]="description"
+        autocomplete="off"
+        placeholder="Beschrijving"
+      />
+
+      <label for="price">Price</label>
+      <input
+        type="text"
+        id="price"
+        name="price"
+        required
+        [(ngModel)]="price"
+        autocomplete="off"
+        placeholder="price"
+      />
+
+      <label for="stock">Stock</label>
+      <input
+        type="number"
+        id="stock"
+        name="stock"
+        required
+        [(ngModel)]="stock"
+        autocomplete="off"
+        placeholder="Voorraad"
+      />
+
+      <label for="grade">Grade</label>
+      <select id="grade" name="grade" [(ngModel)]="grade" required>
+        <option value="MASTER_GRADE">Master Grade</option>
+        <option value="HIGH_GRADE">High Grade</option>
+        <option value="REAL_GRADE">Real Grade</option>
+        <option value="PERFECT_GRADE">Perfect Grade</option>
+      </select>
+
+      <div class="edit-buttons">
+        <button type="button" class="red-button" (click)="deleteProduct()">
+          Delete
+        </button>
+        <button type="submit" class="red-button">Edit</button>
+      </div>
+    </form>
+  </section>
+</section>

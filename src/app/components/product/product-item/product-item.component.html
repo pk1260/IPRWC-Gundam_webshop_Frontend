@@ -1,0 +1,8 @@
+<section class="product-card">
+  <button class="edit-product" [routerLink]="['/product/edit/', product.id]" *appAdminOnly>Edit</button>
+  <img class="primaryImage" [src]=product.image alt="Gundam">
+  <section class="product-information">
+    <p>{{product.name}}</p>
+    <button class="add-to-card-button" [routerLink]="['/product', product.id]">Details</button>
+  </section>
+</section>
